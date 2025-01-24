@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="contact.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Contactez-nous</h1>
+
+
+
+
+<nav>Vous avez un projet de formation ?</nav> <p>Contactez-nous pour un devis ou une demande de renseignement !</p>
+    </div>
+    <form id="contact" method="POST">
+                        <div>
+            <label>
+                <span> Votre nom* </span>
+                <input required type="text" name="nom" id="nom" placeholder="Nom" value="">
+            </label>
+            <label>
+                <span> Votre prénom* </span>
+                <input required type="text" name="prenom" id="prenom" placeholder="Prénom" value="">
+            </label>
+        </div>
+
+        <label>
+                <span> Votre email* </span>
+                <input required type="mail" name="email" id="email" placeholder="Email" value="">
+        </label>
+
+        <label>
+                <span> Téléphone* </span>
+                <input required type="tel" pattern="[0-9\+]{10,13}" name="telephone" id="telephone" placeholder="Téléphone" title="Le numéro de téléphone doit respecter le format suivant : 0102030405 ou +33102030405" value="">
+        </label>
+
+        <label for="lieu-formation-select">Lieu de formation souhaité :*</label>
+        <select name="lieu-formation" id="lieu-formation-select">
+            <option hidden>Sélectionner</option>
+            <option value="ramonville_toulouse" >Ramonville / Toulouse</option><option value="montpellier" >Montpellier</option><option value="carcassonne" >Carcassonne</option><option value="perpignan" >Perpignan</option><option value="tarbes" >Tarbes</option>        </select>
+
+
+        <label>
+            <span> Formation envisagée* </span>
+            <input required type="text" name="formation" id="formation" placeholder="Formation" value="">
+        </label>
+        <label>
+            <span> Actuellement vous êtes* </span>
+            <select name="profile">
+                <option hidden> Sélectionner </option>
+                                    <option value="alternant" > Alternant </option>
+                                        <option value="demandeur-emploi" > Demandeur d'emploi </option>
+                                        <option value="entreprise" > Entreprises </option>
+                                        <option value="salarie" > Salarié </option>
+                                    <option value="autre" > Autre </option>
+            </select>
+        </label>
+
+        <label>
+                <span> Autre – Précisez </span>
+                <input type="tel" name="precisez" id="precisez" placeholder="Autre" value="">
+        </label>
+
+        <div class="other-situation">
+            <p class="pint1">Cochez les cases correspondant à votre situation le cas échéant :</p>
+            <div>
+                    <input name="rqth" id="rqth" type="checkbox" >
+                    <label for="rqth"> Je suis Reconnue en Qualité de Travailleur Handicapé (RQTH) </label>
+            </div>
+            <div>
+                    <input name="csp" id="csp" type="checkbox" >
+                    <label for="csp"> Je suis en Contrat de Sécurisation Professionnelle (CSP) suite à un licenciement économique </label>
+            </div>
+        </div>
+
+        <div class="cpf">
+            <p class="pint2">Votre CPF est-il alimenté ?</p>
+            <div>
+                <input type="radio" id="oui" name="cpf" value="oui">
+                <label for="oui">Oui</label>
+            </div>
+            <div>
+                <input type="radio" id="non" name="cpf" value="non">
+                <label for="non">Non</label>
+            </div>
+            <div>
+                <input type="radio" id="indecis" name="cpf" value="indecis">
+                <label for="indecis">Je ne sais pas</label>
+            </div>
+        </div>
+
+        <label>
+            <span> Quel financement de votre formation avez-vous envisagé ? </span>
+            <select name="financement">
+                <option hidden> Sélectionner </option>
+                <option value="Alternance" > Alternance </option>
+                <option value="Pole emploi region" > Pôle Emploi / Région </option>
+                <option value="CPF" > CPF </option>
+                <option value="Ne sais pas" > Je ne sais pas </option>
+            </select>
+        </label>
+
+        <label>
+                <span> Message* </span>
+                <textarea required name="message" placeholder="Message"></textarea>
+        </label>
+
+        <div class="cgv">
+                <input name="cgv" id="cgv" type="checkbox" required >
+                <label for="cgv"> J'accepte que Adrar Formation collecte et utilise les données personnelles renseignées dans ce formulaire. Pour plus d'informations, vous pouvez consulter notre page <a href="/politique-protection-des-donnees/" data-wpel-link="internal">politique de protection des données</a>. </label>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LfpsA0pAAAAAH-lD7t8bA2vXBTmSdgT2bjI9h8H"></div>
+        <button class="submit-button" data-action='submit'>Envoyer</button>
+    </form>
+
+</div>
+</body>
+</html>

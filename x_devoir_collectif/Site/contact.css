@@ -1,0 +1,60 @@
+h1
+{
+    color:rgb(136, 196, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav
+{
+    color:rgb(108, 175, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+ 
+}
+
+p
+{
+    color:rgb(108, 175, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form
+{
+    border: 9px dotted beige;
+    border-radius: 10%;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    background-color: rgb(136, 196, 216);
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+::placeholder
+{
+    background-color: lightblue;
+}
+
+.submit-button
+{
+    color: black;
+    background-color: beige;
+    border: black 1px solid;
+    
+}
+
+.pint1, .pint2
+{
+    color: beige;
+    font-weight: bolder;
+    font-size: 25px;
+
+}
